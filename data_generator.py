@@ -27,9 +27,9 @@ with open('university_records.csv', 'w', newline='') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
     writer.writerows(data)
-import csv
 with open('university_records.csv', 'r' ,newline='') as csvfile:
     reader=csv.reader(csvfile)
     for row in reader:
         print(row)
+
         
